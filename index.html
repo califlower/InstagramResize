@@ -1,0 +1,57 @@
+<head>
+    <script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+    <h1>Instagram Photo Resizer</h1>
+    <h2>Automatically add a background to your photo to fit Instagram without cropping</h2>
+
+
+    <h3>Step 1: Choose Your Image</h3>
+    <input type="file" id="photos" name="files[]" accept="image/*"" />
+    <canvas id="inputPhoto" width="0" height="0"></canvas>
+
+    <div id="selectSection" style="display:none">
+        <h3>Step 2: Select Background Crop Color</h3>   
+        <div>
+            <input type="radio" id="black_select" name="color_select" value="1">
+            <label for="black_select">Black</label>
+        </div>
+    
+        <div>
+            <input type="radio" id="white_select" name="color_select" value="0">
+            <label for="white_select">White</label>
+        </div>
+    </div>
+        <div id="downloadSection" style="display:none">
+            <h3>Step 3: Download Image</h3>
+            <button id = "downloadButton">
+                <a id="downloadLink" download="InstaGramResized.jpg">Download as image</a>
+            </button>
+        </div>
+
+
+
+    <h4>FAQ</h4>
+    <strong>Do you send anything to any servers?</strong>
+    <div>No. Images aren't sent anywhere.</div>
+
+    <hr>
+
+    <strong>Are my images being looked at by you?</strong>
+    <div>Also no.</div>
+
+    <hr>
+
+    <strong>Any ads?</strong>
+    <div>No.</div>
+
+    <hr>
+
+    <strong>Did you use any suspicious third party javascript libraries?</strong>
+    <div>No. It's literally plain javascript with no dependencies.</div>
+
+    <hr>
+
+    <strong>I'd like to request a feature</strong>
+    <div>Email me at cal13199@gmail.com</div>
+</body>
