@@ -21,7 +21,7 @@ function handleFiles(e) {
 
     var downloadSection = document.getElementById('downloadSection')
 
-    var ctx = canvas.getContext('2d', {colorSpace: "linear-srgb"});
+    var ctx = canvas.getContext('2d', {colorSpace: "srgb"});
     var url = URL.createObjectURL(e.target.files[0]);
 
     var img = new Image();
